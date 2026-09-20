@@ -1,66 +1,67 @@
-/* =========================
-   CURRENT YEAR
-========================= */
+/* =========================================
+   HUNGER HATCH
+   ========================================= */
 
-const year = document.getElementById("year");
-
-if (year) {
-    year.textContent = new Date().getFullYear();
-}
+const menuButton = document.getElementById("menuButton");
+const navMenu = document.getElementById("navMenu");
 
 
-/* =========================
-   SMOOTH INTERNAL LINKS
-========================= */
+// MOBILE MENU
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+menuButton.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+});
 
-    link.addEventListener("click", event => {
 
-        const href = link.getAttribute("href");
+// CLOSE MOBILE MENU AFTER CLICKING A LINK
 
-        if (!href || href === "#") {
-            return;
-        }
+const navLinks = document.querySelectorAll("#navMenu a");
 
-        const target = document.querySelector(href);
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+    });
+});
 
-        if (!target) {
-            return;
-        }
 
-        event.preventDefault();
+// SIMPLE SCROLL REVEAL
 
-        target.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
+const revealElements = document.querySelectorAll(
+    ".intro-content, .food-card, .statement-inner, .gallery-item, .visit-left, .visit-right"
+);
+
+const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("revealed");
+
+                observer.unobserve(entry.target);
+
+            }
+
         });
 
-    });
+    },
+    {
+        threshold: 0.12
+    }
+);
 
+
+revealElements.forEach(element => {
+    element.classList.add("reveal");
+    revealObserver.observe(element);
 });
 
 
-/* =========================
-   NAVBAR SCROLL
-========================= */
+// CURRENT YEAR
 
-const navbar = document.querySelector(".navbar");
+const footerYear = document.querySelector(".footer-year");
 
-window.addEventListener("scroll", () => {
-
-    if (!navbar) {
-        return;
-    }
-
-    if (window.scrollY > 30) {
-
-        navbar.style.background = "rgba(7,7,7,.98)";
-
-    } else {
-
-        navbar.style.background = "rgba(9,9,9,.96)";
-
-    }
-
-});
+if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
+}
