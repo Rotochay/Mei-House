@@ -10,13 +10,13 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Menu — Mei House · Epsom</title>
+    <title>Menu | Mei House Epsom</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
@@ -25,34 +25,40 @@
 </head>
 
 
-<body class="menu-page">
+<body>
 
 
 <header class="navbar">
 
-    <a href="index.html" class="brand">
+    <a href="index.html" class="logo">
 
-        <span>MEI HOUSE</span>
+        <span class="logo-main">
+            MEI HOUSE
+        </span>
 
-        <small>
-            美 · HOUSE
-        </small>
+        <span class="logo-sub">
+            美 · CHINESE TAKEAWAY
+        </span>
 
     </a>
 
 
-    <nav>
+    <nav class="desktop-nav">
 
-        <a href="index.html#experience">
-            Experience
+        <a href="index.html">
+            Home
         </a>
 
         <a href="menu.html" class="active">
             Menu
         </a>
 
+        <a href="index.html#about">
+            About
+        </a>
+
         <a href="index.html#visit">
-            Visit
+            Find Us
         </a>
 
     </nav>
@@ -60,97 +66,606 @@
 
     <a
         href="tel:01372727673"
-        class="nav-button"
+        class="nav-call"
     >
-        Call to order
+        Call to Order
     </a>
 
 </header>
 
 
+
 <main>
 
 
+<!-- =========================
+     MENU HERO
+========================= -->
+
 <section class="menu-hero">
 
-    <div class="section-label">
-        MEI HOUSE · EPSOM
+    <div class="menu-hero-pattern">
+        中
     </div>
 
-    <h1>
-        The
-        <em>menu.</em>
-    </h1>
+    <div class="section-container">
 
-    <p>
-        Explore the current Mei House menu.
-        When you're ready, call us directly to order.
-    </p>
+        <span class="eyebrow">
+            MEI HOUSE · EPSOM
+        </span>
+
+        <h1>
+            Our
+            <em>Menu.</em>
+        </h1>
+
+        <p>
+            Explore the full Mei House menu below.
+            When you're ready, call us directly to order.
+        </p>
+
+        <a
+            href="tel:01372727673"
+            class="button button-red"
+        >
+            Call to Order
+        </a>
+
+    </div>
 
 </section>
 
 
 
-<section class="full-menu">
+<!-- =========================
+     QUICK CATEGORIES
+========================= -->
 
+<section class="menu-navigation">
 
-    <div class="menu-top">
+    <div class="section-container">
 
-        <span>
-            CURRENT MENU
-        </span>
+        <div class="menu-nav-scroll">
 
-        <span>
-            MEI HOUSE
-        </span>
+            <a href="#soups">Soups</a>
+            <a href="#appetisers">Appetisers</a>
+            <a href="#chicken">Chicken</a>
+            <a href="#beef">Beef</a>
+            <a href="#pork">Pork</a>
+            <a href="#seafood">Seafood</a>
+            <a href="#duck">Duck</a>
+            <a href="#noodles">Noodles</a>
+            <a href="#rice">Rice</a>
+            <a href="#sets">Set Meals</a>
+
+        </div>
 
     </div>
 
+</section>
 
 
-    <div class="menu-document">
 
+<!-- =========================
+     MENU HIGHLIGHTS
+========================= -->
 
-        <div class="menu-page-image">
+<section class="menu-highlights section-light">
 
-            <img
-                src="images/menu.jpg"
-                alt="Mei House menu — page 1"
-            >
+    <div class="section-container">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">
+                A FEW FAVOURITES
+            </span>
+
+            <h2>
+                What's on the
+                <em>menu?</em>
+            </h2>
 
         </div>
 
 
-        <div class="menu-page-image">
+        <div class="mini-menu-grid">
 
-            <img
-                src="images/menu2.jpg"
-                alt="Mei House menu — page 2"
-            >
+
+            <div id="soups" class="mini-menu-card">
+
+                <span>01</span>
+
+                <h3>
+                    Soups
+                </h3>
+
+                <p>
+                    Mixed Seafood Soup · Hot & Sour Soup ·
+                    Chicken & Sweetcorn Soup · Won Ton Soup ·
+                    Chicken & Mushroom Soup · Chicken & Noodle Soup
+                </p>
+
+            </div>
+
+
+
+            <div id="appetisers" class="mini-menu-card">
+
+                <span>02</span>
+
+                <h3>
+                    Appetisers
+                </h3>
+
+                <p>
+                    Spare Ribs · Satay Chicken ·
+                    Salt & Pepper Chicken Wings ·
+                    Sesame Prawn Toast · Crispy Prawn Dumplings ·
+                    Spring Rolls · Prawn Crackers
+                </p>
+
+            </div>
+
+
+
+            <div id="chicken" class="mini-menu-card">
+
+                <span>03</span>
+
+                <h3>
+                    Chicken Dishes
+                </h3>
+
+                <p>
+                    Kung Po Chicken · Chicken Szechuan Style ·
+                    Chicken with Cashew Nuts · Chicken with
+                    Green Pepper in Black Bean Sauce ·
+                    Chicken with Ginger & Spring Onion
+                </p>
+
+            </div>
+
+
+
+            <div id="beef" class="mini-menu-card">
+
+                <span>04</span>
+
+                <h3>
+                    Beef Dishes
+                </h3>
+
+                <p>
+                    Crispy Shredded Chilli Beef ·
+                    Beef with Cashew Nuts · Beef with Green Pepper
+                    in Black Bean Sauce · Beef in Oyster Sauce ·
+                    Beef in Black Pepper Sauce
+                </p>
+
+            </div>
+
+
+
+            <div id="pork" class="mini-menu-card">
+
+                <span>05</span>
+
+                <h3>
+                    Pork & Lamb
+                </h3>
+
+                <p>
+                    Roast Pork with Green Pepper ·
+                    Roast Pork with Cashew Nuts ·
+                    Roast Pork in Oyster Sauce ·
+                    Pork Twice Cooked with Chilli ·
+                    Lamb with Ginger & Spring Onion
+                </p>
+
+            </div>
+
+
+
+            <div id="seafood" class="mini-menu-card">
+
+                <span>06</span>
+
+                <h3>
+                    Seafood
+                </h3>
+
+                <p>
+                    King Prawns · Squid · Seafood Supreme ·
+                    King Prawns with Cashew Nuts ·
+                    King Prawns with Mushrooms ·
+                    King Prawns with Ginger & Spring Onion
+                </p>
+
+            </div>
+
+
+
+            <div id="duck" class="mini-menu-card">
+
+                <span>07</span>
+
+                <h3>
+                    Duck
+                </h3>
+
+                <p>
+                    Peking Duck · Aromatic Crispy Duck ·
+                    Roast Duck Chinese Style ·
+                    Roast Duck with Pineapple ·
+                    Roast Duck with Ginger & Spring Onion
+                </p>
+
+            </div>
+
+
+
+            <div id="noodles" class="mini-menu-card">
+
+                <span>08</span>
+
+                <h3>
+                    Noodles
+                </h3>
+
+                <p>
+                    House Special Chow Mein ·
+                    Singapore Chow Mein ·
+                    Singapore Vermicelli Noodles ·
+                    Plain Chow Mein · Fried Udon
+                </p>
+
+            </div>
+
+
+
+            <div id="rice" class="mini-menu-card">
+
+                <span>09</span>
+
+                <h3>
+                    Rice
+                </h3>
+
+                <p>
+                    House Special Fried Rice ·
+                    Special Fried Rice · Chicken Fried Rice ·
+                    King Prawn Fried Rice · Singapore Fried Rice ·
+                    Vegetable Fried Rice
+                </p>
+
+            </div>
+
+
+
+            <div class="mini-menu-card">
+
+                <span>10</span>
+
+                <h3>
+                    Sweet & Sour
+                </h3>
+
+                <p>
+                    Sweet & Sour Chicken Hong Kong Style ·
+                    Sweet & Sour Pork Hong Kong Style ·
+                    Sweet & Sour King Prawns ·
+                    Sweet & Sour Chicken Balls
+                </p>
+
+            </div>
+
+
+
+            <div class="mini-menu-card">
+
+                <span>11</span>
+
+                <h3>
+                    Curry
+                </h3>
+
+                <p>
+                    Chicken Curry · King Prawn Curry ·
+                    House Special Curry · Mixed Vegetable Curry ·
+                    Mushroom Curry
+                </p>
+
+            </div>
+
+
+
+            <div class="mini-menu-card">
+
+                <span>12</span>
+
+                <h3>
+                    Thai Curry
+                </h3>
+
+                <p>
+                    Beef Thai Green Curry · Chicken Thai Green Curry ·
+                    King Prawn Thai Green Curry ·
+                    Beef Thai Red Curry · Chicken Thai Red Curry
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     REAL MENU
+========================= -->
+
+<section class="real-menu">
+
+    <div class="section-container">
+
+        <div class="real-menu-heading">
+
+            <div>
+
+                <span class="eyebrow">
+                    FULL MENU
+                </span>
+
+                <h2>
+                    The complete
+                    <em>Mei House menu.</em>
+                </h2>
+
+            </div>
+
+            <p>
+                These are the current menu pages supplied
+                by Mei House. Please call to confirm availability
+                and prices when ordering.
+            </p>
 
         </div>
 
 
+        <div class="menu-images">
+
+            <div class="menu-photo">
+
+                <span class="menu-page-label">
+                    MENU · 01
+                </span>
+
+                <img
+                    src="images/menu.jpg"
+                    alt="Mei House full menu page one"
+                >
+
+            </div>
+
+
+            <div class="menu-photo">
+
+                <span class="menu-page-label">
+                    MENU · 02
+                </span>
+
+                <img
+                    src="images/menu2.jpg"
+                    alt="Mei House full menu page two"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-order">
+
+            <div>
+
+                <span class="eyebrow">
+                    READY TO ORDER?
+                </span>
+
+                <h3>
+                    Give Mei House a call.
+                </h3>
+
+            </div>
+
+
+            <a
+                href="tel:01372727673"
+                class="button button-red"
+            >
+                01372 727 673
+            </a>
+
+        </div>
+
     </div>
 
-
-
-    <p class="menu-note">
-
-        Menu and prices may change.
-        Please contact Mei House for current availability.
-
-    </p>
+</section>
 
 
 
-    <a
-        href="tel:01372727673"
-        class="button red menu-call"
-    >
-        Call to order
-    </a>
+<!-- =========================
+     SET MEALS
+========================= -->
 
+<section
+    class="sets menu-sets"
+    id="sets"
+>
+
+    <div class="set-decoration">
+        美
+    </div>
+
+    <div class="section-container">
+
+        <div class="set-grid">
+
+            <div class="set-intro">
+
+                <span class="eyebrow">
+                    SPECIAL SET MEALS
+                </span>
+
+                <h2>
+                    Made for
+                    <em>sharing.</em>
+                </h2>
+
+                <p>
+                    Set meals combine several Mei House
+                    favourites into generous meals for
+                    two, three or four people.
+                </p>
+
+            </div>
+
+
+            <div class="set-list">
+
+
+                <div class="set-item">
+
+                    <div class="set-label">
+                        A
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            For Two Persons or More
+                        </h3>
+
+                        <p>
+                            Chicken with Green Pepper in Black Bean Sauce<br>
+                            Beef with Cashew Nuts<br>
+                            Sweet & Sour Pork<br>
+                            Special Fried Rice
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        £27.50
+                    </strong>
+
+                </div>
+
+
+
+                <div class="set-item">
+
+                    <div class="set-label">
+                        B
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            For Two Persons or More
+                        </h3>
+
+                        <p>
+                            Honey Spare Ribs<br>
+                            Chicken with Cashew Nuts<br>
+                            Beef with Green Pepper in Black Bean Sauce<br>
+                            Sweet & Sour Pork<br>
+                            Special Fried Rice
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        £33.50
+                    </strong>
+
+                </div>
+
+
+
+                <div class="set-item">
+
+                    <div class="set-label">
+                        C
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            For Three Persons or More
+                        </h3>
+
+                        <p>
+                            Crispy Prawn Dumplings<br>
+                            BBQ Spare Ribs<br>
+                            Chicken with Green Pepper in Black Bean Sauce<br>
+                            Crispy Shredded Chilli Beef<br>
+                            Roast Duck with Ginger & Spring Onion<br>
+                            King Prawns with Mushrooms<br>
+                            Special Fried Rice
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        £52.50
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ORDER
+========================= -->
+
+<section class="order-section">
+
+    <div class="order-inner">
+
+        <span class="eyebrow">
+            TELEPHONE ORDERS WELCOME
+        </span>
+
+        <h2>
+            Choose your
+            <em>favourites.</em>
+        </h2>
+
+        <p>
+            Then call Mei House directly to place
+            your order.
+        </p>
+
+        <a
+            href="tel:01372727673"
+            class="phone-number"
+        >
+            01372 727 673
+        </a>
+
+    </div>
 
 </section>
 
@@ -161,9 +676,7 @@
 
 <footer>
 
-
-    <div class="footer-main">
-
+    <div class="footer-container">
 
         <div class="footer-brand">
 
@@ -172,14 +685,13 @@
             </span>
 
             <small>
-                美 · HOUSE
+                美 · CHINESE TAKEAWAY
             </small>
 
         </div>
 
 
-
-        <div class="footer-nav">
+        <div class="footer-links">
 
             <a href="index.html">
                 Home
@@ -189,25 +701,31 @@
                 Menu
             </a>
 
-            <a href="index.html#visit">
-                Visit
+            <a href="index.html#about">
+                About
             </a>
 
-            <a href="tel:01372727673">
-                Call
+            <a href="index.html#visit">
+                Find Us
             </a>
 
         </div>
 
 
-    </div>
+        <a
+            href="tel:01372727673"
+            class="footer-phone"
+        >
+            01372 727 673
+        </a>
 
+    </div>
 
 
     <div class="footer-bottom">
 
         <span>
-            Chinese Restaurant · Epsom
+            Quality Chinese Food To Take Away
         </span>
 
         <span>
@@ -215,7 +733,6 @@
         </span>
 
     </div>
-
 
 </footer>
 
@@ -225,13 +742,11 @@
     href="tel:01372727673"
     class="mobile-call"
 >
-    ☎ &nbsp; Call to order
+    ☎ &nbsp; CALL TO ORDER
 </a>
-
 
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
