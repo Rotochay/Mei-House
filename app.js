@@ -1,67 +1,66 @@
-/* =========================================
-   HUNGER HATCH
-   ========================================= */
+/* =========================
+   CURRENT YEAR
+========================= */
 
-const menuButton = document.getElementById("menuButton");
-const navMenu = document.getElementById("navMenu");
+const year = document.getElementById("year");
 
-
-// MOBILE MENU
-
-menuButton.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-});
+if (year) {
+    year.textContent = new Date().getFullYear();
+}
 
 
-// CLOSE MOBILE MENU AFTER CLICKING A LINK
+/* =========================
+   SMOOTH INTERNAL LINKS
+========================= */
 
-const navLinks = document.querySelectorAll("#navMenu a");
+document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        navMenu.classList.remove("open");
-    });
-});
+    link.addEventListener("click", event => {
 
+        const href = link.getAttribute("href");
 
-// SIMPLE SCROLL REVEAL
+        if (!href || href === "#") {
+            return;
+        }
 
-const revealElements = document.querySelectorAll(
-    ".intro-content, .food-card, .statement-inner, .gallery-item, .visit-left, .visit-right"
-);
+        const target = document.querySelector(href);
 
-const revealObserver = new IntersectionObserver(
-    (entries, observer) => {
+        if (!target) {
+            return;
+        }
 
-        entries.forEach(entry => {
+        event.preventDefault();
 
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("revealed");
-
-                observer.unobserve(entry.target);
-
-            }
-
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
         });
 
-    },
-    {
-        threshold: 0.12
-    }
-);
+    });
 
-
-revealElements.forEach(element => {
-    element.classList.add("reveal");
-    revealObserver.observe(element);
 });
 
 
-// CURRENT YEAR
+/* =========================
+   NAVBAR SCROLL
+========================= */
 
-const footerYear = document.querySelector(".footer-year");
+const navbar = document.querySelector(".navbar");
 
-if (footerYear) {
-    footerYear.textContent = new Date().getFullYear();
-}
+window.addEventListener("scroll", () => {
+
+    if (!navbar) {
+        return;
+    }
+
+    if (window.scrollY > 30) {
+
+        navbar.style.background = "rgba(7,7,7,.98)";
+
+    } else {
+
+        navbar.style.background = "rgba(9,9,9,.96)";
+
+    }
+
+});
