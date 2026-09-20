@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mei House — Epsom</title>
+    <title>Mei House | Chinese Takeaway in Epsom</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
@@ -19,111 +19,254 @@
 
 <body>
 
+<!-- =========================
+     NAVIGATION
+========================= -->
+
 <header class="navbar">
 
-    <a href="index.html" class="brand">
-        <span>MEI HOUSE</span>
-        <small>美 · HOUSE</small>
+    <a href="index.html" class="logo">
+
+        <span class="logo-main">
+            MEI HOUSE
+        </span>
+
+        <span class="logo-sub">
+            美 · CHINESE TAKEAWAY
+        </span>
+
     </a>
 
-    <nav>
-        <a href="#experience">Experience</a>
-        <a href="menu.html">Menu</a>
-        <a href="#visit">Visit</a>
+
+    <nav class="desktop-nav">
+
+        <a href="index.html" class="active">
+            Home
+        </a>
+
+        <a href="menu.html">
+            Menu
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#visit">
+            Find Us
+        </a>
+
     </nav>
 
-    <a href="tel:01372727673" class="nav-button">
-        Call to order
+
+    <a
+        href="tel:01372727673"
+        class="nav-call"
+    >
+        Call to Order
     </a>
 
 </header>
 
 
+
+<!-- =========================
+     HERO
+========================= -->
+
 <main>
 
 <section class="hero">
 
-    <div class="hero-mark">美</div>
+    <div class="hero-pattern">
+        美
+    </div>
+
 
     <div class="hero-content">
 
-        <div class="eyebrow">
-            CHINESE RESTAURANT · EPSOM
+        <div class="hero-kicker">
+            AUTHENTIC CHINESE FOOD · EPSOM
         </div>
 
+
         <h1>
-            A taste of the East,
-            <span>reimagined.</span>
+            Quality Chinese
+            <span>Food To Take Away.</span>
         </h1>
 
-        <p>
-            Chinese cooking, bold flavour and the pleasure
-            of sharing — right in the heart of Epsom.
+
+        <p class="hero-description">
+            Freshly prepared Chinese favourites, noodles,
+            rice dishes, seafood, crispy duck and more —
+            available for collection and home delivery.
         </p>
 
-        <div class="hero-actions">
 
-            <a href="menu.html" class="button red">
-                Explore the menu
+        <div class="hero-buttons">
+
+            <a
+                href="menu.html"
+                class="button button-red"
+            >
+                View Our Menu
             </a>
 
-            <a href="tel:01372727673" class="button outline">
-                Call to order
+
+            <a
+                href="tel:01372727673"
+                class="button button-outline"
+            >
+                Call to Order
             </a>
+
+        </div>
+
+
+        <div class="hero-details">
+
+            <div>
+                <strong>33 Upper High Street</strong>
+                <span>Epsom, Surrey</span>
+            </div>
+
+            <div class="detail-line"></div>
+
+            <div>
+                <strong>01372 727 673</strong>
+                <span>Telephone orders welcome</span>
+            </div>
 
         </div>
 
     </div>
 
-    <div class="hero-bottom">
 
-        <span>33 Upper High Street</span>
+    <div class="hero-badge">
 
-        <span class="line"></span>
+        <span>MEI</span>
+        <strong>HOUSE</strong>
 
-        <span>EPSOM · SURREY</span>
+        <small>
+            EPSOM
+        </small>
 
     </div>
 
 </section>
 
 
-<section class="experience" id="experience">
 
-    <div class="section-label">
-        01 / EXPERIENCE
-    </div>
+<!-- =========================
+     FEATURE STRIP
+========================= -->
 
-    <div class="experience-grid">
+<section class="feature-strip">
+
+    <div class="feature-item">
+
+        <span class="feature-icon">
+            ✦
+        </span>
 
         <div>
+            <strong>
+                Telephone Orders
+            </strong>
 
-            <p class="small-title">
-                THE MEI HOUSE EXPERIENCE
-            </p>
+            <span>
+                Call us directly
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="feature-item">
+
+        <span class="feature-icon">
+            中
+        </span>
+
+        <div>
+            <strong>
+                Chinese Favourites
+            </strong>
+
+            <span>
+                A wide-ranging menu
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="feature-item">
+
+        <span class="feature-icon">
+            ↗
+        </span>
+
+        <div>
+            <strong>
+                Home Delivery
+            </strong>
+
+            <span>
+                Delivery available
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section
+    class="about section-light"
+    id="about"
+>
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                MEI HOUSE
+            </span>
 
             <h2>
-                Tradition
-                <em>with character.</em>
+                Chinese food,
+                <em>made to order.</em>
             </h2>
 
         </div>
 
-        <div class="experience-copy">
 
-            <p class="big-copy">
-                A modern destination for Chinese food
-                in the heart of Epsom.
+        <div class="about-copy">
+
+            <p class="large-copy">
+                From familiar favourites to generous
+                dishes made for sharing.
             </p>
 
             <p>
-                From familiar favourites to dishes designed
-                for sharing, Mei House brings together rich
-                flavours and the character of wok cooking.
+                Mei House offers a broad Chinese takeaway
+                menu in the heart of Epsom, with dishes
+                ranging from soups and appetisers to
+                seafood, duck, noodles, rice and set meals.
             </p>
 
-            <a href="menu.html" class="arrow-link">
-                Discover the menu
+            <a
+                href="menu.html"
+                class="text-link"
+            >
+                Explore the full menu
                 <span>→</span>
             </a>
 
@@ -134,114 +277,540 @@
 </section>
 
 
-<section class="statement">
 
-    <div class="statement-content">
+<!-- =========================
+     FEATURED DISHES
+========================= -->
 
-        <div class="small-title">
-            FROM THE KITCHEN
+<section class="featured">
+
+    <div class="section-container">
+
+        <div class="section-top">
+
+            <div>
+
+                <span class="eyebrow">
+                    FROM THE MENU
+                </span>
+
+                <h2>
+                    Customer
+                    <em>favourites.</em>
+                </h2>
+
+            </div>
+
+
+            <a
+                href="menu.html"
+                class="outline-link"
+            >
+                See Full Menu
+                <span>↗</span>
+            </a>
+
         </div>
 
-        <h2>
-            FIRE.
-            <i>WOK.</i>
-            FLAVOUR.
-        </h2>
 
-        <div class="gold-line"></div>
 
-        <p>
-            Bold aromatics. High heat. Carefully prepared food.
-        </p>
+        <div class="dish-grid">
+
+
+            <article class="dish-card">
+
+                <div class="dish-number">
+                    01
+                </div>
+
+                <div class="dish-content">
+
+                    <span>
+                        APPETISER
+                    </span>
+
+                    <h3>
+                        Salt & Pepper
+                        Chicken Wings
+                    </h3>
+
+                    <p>
+                        Crispy chicken wings with
+                        salt and pepper seasoning.
+                    </p>
+
+                    <strong>
+                        £7.30
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="dish-card featured-red">
+
+                <div class="dish-number">
+                    02
+                </div>
+
+                <div class="dish-content">
+
+                    <span>
+                        CHICKEN
+                    </span>
+
+                    <h3>
+                        Chicken with
+                        Cashew Nuts
+                    </h3>
+
+                    <p>
+                        Chicken cooked with cashew
+                        nuts and vegetables.
+                    </p>
+
+                    <strong>
+                        £7.70
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="dish-card">
+
+                <div class="dish-number">
+                    03
+                </div>
+
+                <div class="dish-content">
+
+                    <span>
+                        SEAFOOD
+                    </span>
+
+                    <h3>
+                        King Prawns
+                        with Mushrooms
+                    </h3>
+
+                    <p>
+                        King prawns with mushrooms
+                        in a savoury sauce.
+                    </p>
+
+                    <strong>
+                        £8.50
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="dish-card">
+
+                <div class="dish-number">
+                    04
+                </div>
+
+                <div class="dish-content">
+
+                    <span>
+                        RICE
+                    </span>
+
+                    <h3>
+                        House Special
+                        Fried Rice
+                    </h3>
+
+                    <p>
+                        King prawns, chicken, beef,
+                        pork and mixed vegetables.
+                    </p>
+
+                    <strong>
+                        £9.50
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+        </div>
 
     </div>
 
 </section>
 
 
-<section class="menu-preview">
 
-    <div class="section-label">
-        02 / THE MENU
-    </div>
+<!-- =========================
+     MENU CATEGORIES
+========================= -->
 
-    <div class="menu-heading">
+<section class="categories section-light">
 
-        <div>
+    <div class="section-container">
 
-            <p class="small-title">
-                THE CURRENT MENU
-            </p>
+        <div class="section-heading centered">
+
+            <span class="eyebrow">
+                BROWSE THE MENU
+            </span>
 
             <h2>
-                What's
-                <em>on the table.</em>
+                Something for
+                <em>everyone.</em>
             </h2>
 
         </div>
 
-        <div class="menu-description">
 
-            <p>
-                Browse the current Mei House menu,
-                then call directly to place your order.
-            </p>
+        <div class="category-grid">
 
-            <a href="menu.html" class="arrow-link">
-                View full menu
-                <span>↗</span>
+
+            <a href="menu.html#soups" class="category-card">
+
+                <span>01</span>
+
+                <strong>
+                    Soups
+                </strong>
+
+                <small>
+                    Traditional favourites
+                </small>
+
+                <b>→</b>
+
+            </a>
+
+
+            <a href="menu.html#appetisers" class="category-card">
+
+                <span>02</span>
+
+                <strong>
+                    Appetisers
+                </strong>
+
+                <small>
+                    Crispy & savoury
+                </small>
+
+                <b>→</b>
+
+            </a>
+
+
+            <a href="menu.html#chicken" class="category-card">
+
+                <span>03</span>
+
+                <strong>
+                    Chicken
+                </strong>
+
+                <small>
+                    Classic Chinese dishes
+                </small>
+
+                <b>→</b>
+
+            </a>
+
+
+            <a href="menu.html#beef" class="category-card">
+
+                <span>04</span>
+
+                <strong>
+                    Beef
+                </strong>
+
+                <small>
+                    Rich & full flavoured
+                </small>
+
+                <b>→</b>
+
+            </a>
+
+
+            <a href="menu.html#seafood" class="category-card">
+
+                <span>05</span>
+
+                <strong>
+                    Seafood
+                </strong>
+
+                <small>
+                    Prawns, squid & more
+                </small>
+
+                <b>→</b>
+
+            </a>
+
+
+            <a href="menu.html#duck" class="category-card">
+
+                <span>06</span>
+
+                <strong>
+                    Duck
+                </strong>
+
+                <small>
+                    Peking & crispy duck
+                </small>
+
+                <b>→</b>
+
+            </a>
+
+
+            <a href="menu.html#noodles" class="category-card">
+
+                <span>07</span>
+
+                <strong>
+                    Noodles
+                </strong>
+
+                <small>
+                    Chow Mein & Udon
+                </small>
+
+                <b>→</b>
+
+            </a>
+
+
+            <a href="menu.html#rice" class="category-card">
+
+                <span>08</span>
+
+                <strong>
+                    Rice
+                </strong>
+
+                <small>
+                    Fried rice dishes
+                </small>
+
+                <b>→</b>
+
+            </a>
+
+
+        </div>
+
+
+        <div class="center-button">
+
+            <a
+                href="menu.html"
+                class="button button-red"
+            >
+                View Complete Menu
             </a>
 
         </div>
 
     </div>
 
+</section>
 
-    <a href="menu.html" class="menu-preview-card">
 
-        <div class="menu-image-container">
 
-            <img
-                src="images/menu.jpg"
-                alt="Mei House menu"
-            >
+<!-- =========================
+     SET MEALS
+========================= -->
 
-            <div class="menu-hover">
-                <span>OPEN FULL MENU</span>
-                <strong>↗</strong>
+<section class="sets">
+
+    <div class="set-decoration">
+        美
+    </div>
+
+    <div class="section-container">
+
+        <div class="set-grid">
+
+            <div class="set-intro">
+
+                <span class="eyebrow">
+                    FOR SHARING
+                </span>
+
+                <h2>
+                    Special
+                    <em>Set Meals.</em>
+                </h2>
+
+                <p>
+                    Designed for two, three or four
+                    people, with a selection of Mei House
+                    favourites in each set.
+                </p>
+
+                <a
+                    href="menu.html#sets"
+                    class="text-link light-link"
+                >
+                    See all set meals
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="set-list">
+
+
+                <div class="set-item">
+
+                    <div class="set-label">
+                        A
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            For Two Persons
+                        </h3>
+
+                        <p>
+                            Chicken with Green Pepper in
+                            Black Bean Sauce · Beef with
+                            Cashew Nuts · Sweet & Sour Pork
+                            · Special Fried Rice
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        £27.50
+                    </strong>
+
+                </div>
+
+
+
+                <div class="set-item">
+
+                    <div class="set-label">
+                        B
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            For Two Persons
+                        </h3>
+
+                        <p>
+                            Honey Spare Ribs · Chicken with
+                            Cashew Nuts · Beef with Green
+                            Pepper in Black Bean Sauce ·
+                            Sweet & Sour Pork · Special Fried Rice
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        £33.50
+                    </strong>
+
+                </div>
+
+
+
+                <div class="set-item">
+
+                    <div class="set-label">
+                        C
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            For Three Persons
+                        </h3>
+
+                        <p>
+                            Crispy Prawn Dumplings · BBQ Spare
+                            Ribs · Chicken with Green Pepper in
+                            Black Bean Sauce · Crispy Shredded
+                            Chilli Beef · Roast Duck · King Prawns
+                            with Mushrooms · Special Fried Rice
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        £52.50
+                    </strong>
+
+                </div>
+
+
+
             </div>
 
         </div>
 
-    </a>
+    </div>
 
 </section>
 
 
-<section class="order">
+
+<!-- =========================
+     ORDER CTA
+========================= -->
+
+<section class="order-section">
 
     <div class="order-inner">
 
-        <div class="small-title">
-            READY TO ORDER?
-        </div>
+        <span class="eyebrow">
+            TELEPHONE ORDERS WELCOME
+        </span>
 
         <h2>
-            Good food starts
-            with a <em>phone call.</em>
+            Hungry?
+            <em>Give us a call.</em>
         </h2>
 
         <p>
-            Browse the menu and contact Mei House
-            directly to place your order.
+            Browse the menu, choose your favourites,
+            then call Mei House directly.
         </p>
 
-        <a href="tel:01372727673" class="phone">
-            01372 727673
+        <a
+            href="tel:01372727673"
+            class="phone-number"
+        >
+            01372 727 673
         </a>
 
-        <a href="tel:01372727673" class="button white">
-            Call Mei House
+        <a
+            href="menu.html"
+            class="button button-white"
+        >
+            View Menu
         </a>
 
     </div>
@@ -249,83 +818,95 @@
 </section>
 
 
-<section class="visit" id="visit">
 
-    <div class="section-label">
-        03 / VISIT
-    </div>
+<!-- =========================
+     VISIT
+========================= -->
 
-    <div class="visit-grid">
+<section
+    class="visit section-light"
+    id="visit"
+>
 
-        <div>
+    <div class="section-container">
 
-            <p class="small-title">
-                FIND MEI HOUSE
-            </p>
-
-            <h2>
-                In the heart
-                <em>of Epsom.</em>
-            </h2>
-
-            <p class="address">
-                33 Upper High Street<br>
-                Epsom<br>
-                Surrey
-            </p>
-
-            <a
-                href="https://www.google.com/maps/search/?api=1&query=33+Upper+High+Street+Epsom"
-                target="_blank"
-                rel="noopener"
-                class="arrow-link"
-            >
-                Open in Maps
-                <span>↗</span>
-            </a>
-
-        </div>
+        <div class="visit-grid">
 
 
-        <div class="opening-hours">
+            <div>
 
-            <p class="small-title">
-                OPENING HOURS
-            </p>
+                <span class="eyebrow">
+                    FIND US
+                </span>
 
-            <div class="hours-row">
-                <span>Monday</span>
-                <strong>17:00 — 22:00</strong>
+                <h2>
+                    Right in the
+                    <em>heart of Epsom.</em>
+                </h2>
+
+                <p class="address">
+                    33 Upper High Street<br>
+                    Epsom<br>
+                    Surrey<br>
+                    KT17 4QY
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=33+Upper+High+Street+Epsom+KT17+4QY"
+                    target="_blank"
+                    rel="noopener"
+                    class="text-link"
+                >
+                    Open in Google Maps
+                    <span>↗</span>
+                </a>
+
             </div>
 
-            <div class="hours-row">
-                <span>Tuesday</span>
-                <strong>17:00 — 22:00</strong>
-            </div>
 
-            <div class="hours-row">
-                <span>Wednesday</span>
-                <strong>17:00 — 22:00</strong>
-            </div>
 
-            <div class="hours-row">
-                <span>Thursday</span>
-                <strong>17:00 — 22:00</strong>
-            </div>
+            <div class="hours">
 
-            <div class="hours-row">
-                <span>Friday</span>
-                <strong>17:00 — 23:00</strong>
-            </div>
+                <span class="eyebrow">
+                    OPENING HOURS
+                </span>
 
-            <div class="hours-row">
-                <span>Saturday</span>
-                <strong>17:00 — 23:00</strong>
-            </div>
 
-            <div class="hours-row">
-                <span>Sunday</span>
-                <strong>17:00 — 22:00</strong>
+                <div class="hours-row">
+                    <span>Monday</span>
+                    <strong>CLOSED</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Tuesday</span>
+                    <strong>5:00pm — 10:00pm</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Wednesday</span>
+                    <strong>5:00pm — 10:00pm</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Thursday</span>
+                    <strong>5:00pm — 10:00pm</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Friday</span>
+                    <strong>5:00pm — 11:00pm</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Saturday</span>
+                    <strong>5:00pm — 11:00pm</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Sunday</span>
+                    <strong>5:00pm — 10:00pm</strong>
+                </div>
+
             </div>
 
         </div>
@@ -337,35 +918,82 @@
 </main>
 
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-    <div class="footer-main">
+    <div class="footer-container">
 
         <div class="footer-brand">
-            <span>MEI HOUSE</span>
-            <small>美 · HOUSE</small>
+
+            <span>
+                MEI HOUSE
+            </span>
+
+            <small>
+                美 · CHINESE TAKEAWAY
+            </small>
+
         </div>
 
-        <div class="footer-nav">
-            <a href="#experience">Experience</a>
-            <a href="menu.html">Menu</a>
-            <a href="#visit">Visit</a>
-            <a href="tel:01372727673">Call</a>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#visit">
+                Find Us
+            </a>
+
         </div>
+
+
+        <a
+            href="tel:01372727673"
+            class="footer-phone"
+        >
+            01372 727 673
+        </a>
 
     </div>
 
+
     <div class="footer-bottom">
-        <span>Chinese Restaurant · Epsom</span>
-        <span>© <span id="year"></span> Mei House</span>
+
+        <span>
+            Quality Chinese Food To Take Away
+        </span>
+
+        <span>
+            © <span id="year"></span> Mei House
+        </span>
+
     </div>
 
 </footer>
 
 
-<a href="tel:01372727673" class="mobile-call">
-    ☎ &nbsp; Call to order
+
+<a
+    href="tel:01372727673"
+    class="mobile-call"
+>
+    ☎ &nbsp; CALL TO ORDER
 </a>
+
 
 
 <script src="script.js"></script>
