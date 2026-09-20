@@ -4,999 +4,312 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mei House | Chinese Takeaway in Epsom</title>
+    <title>Hunger Hatch | Epsom</title>
+    <meta name="description" content="Hunger Hatch in Epsom — great food, good coffee and a warm welcome.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="#home" class="logo">HUNGER<span>HATCH</span></a>
 
-<header class="navbar">
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#food">Food</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#visit">Find Us</a>
+        </nav>
 
-    <a href="index.html" class="logo">
-
-        <span class="logo-main">
-            MEI HOUSE
-        </span>
-
-        <span class="logo-sub">
-            美 · CHINESE TAKEAWAY
-        </span>
-
-    </a>
-
-
-    <nav class="desktop-nav">
-
-        <a href="index.html" class="active">
-            Home
-        </a>
-
-        <a href="menu.html">
-            Menu
-        </a>
-
-        <a href="#about">
-            About
-        </a>
-
-        <a href="#visit">
-            Find Us
-        </a>
-
-    </nav>
+        <button class="menu-button" id="menuButton" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
 
 
-    <a
-        href="tel:01372727673"
-        class="nav-call"
-    >
-        Call to Order
-    </a>
+    <!-- HERO -->
+    <main>
 
-</header>
+        <section class="hero" id="home">
 
+            <div class="hero-image"></div>
 
+            <div class="hero-overlay"></div>
 
-<!-- =========================
-     HERO
-========================= -->
+            <div class="hero-content">
 
-<main>
+                <p class="eyebrow">EPSOM • SURREY</p>
 
-<section class="hero">
+                <h1>
+                    COME<br>
+                    <span>HUNGRY.</span>
+                </h1>
 
-    <div class="hero-pattern">
-        美
-    </div>
+                <p class="hero-text">
+                    Good food. Great coffee. No fuss.
+                </p>
 
+                <div class="hero-buttons">
+                    <a href="#food" class="button button-primary">
+                        SEE THE FOOD
+                    </a>
 
-    <div class="hero-content">
+                    <a href="#visit" class="button button-outline">
+                        FIND US
+                    </a>
+                </div>
 
-        <div class="hero-kicker">
-            AUTHENTIC CHINESE FOOD · EPSOM
-        </div>
-
-
-        <h1>
-            Quality Chinese
-            <span>Food To Take Away.</span>
-        </h1>
-
-
-        <p class="hero-description">
-            Freshly prepared Chinese favourites, noodles,
-            rice dishes, seafood, crispy duck and more —
-            available for collection and home delivery.
-        </p>
-
-
-        <div class="hero-buttons">
-
-            <a
-                href="menu.html"
-                class="button button-red"
-            >
-                View Our Menu
-            </a>
-
-
-            <a
-                href="tel:01372727673"
-                class="button button-outline"
-            >
-                Call to Order
-            </a>
-
-        </div>
-
-
-        <div class="hero-details">
-
-            <div>
-                <strong>33 Upper High Street</strong>
-                <span>Epsom, Surrey</span>
             </div>
 
-            <div class="detail-line"></div>
-
-            <div>
-                <strong>01372 727 673</strong>
-                <span>Telephone orders welcome</span>
+            <div class="scroll-label">
+                SCROLL ↓
             </div>
 
-        </div>
-
-    </div>
+        </section>
 
 
-    <div class="hero-badge">
+        <!-- INTRO -->
+        <section class="intro" id="about">
 
-        <span>MEI</span>
-        <strong>HOUSE</strong>
+            <div class="section-number">01</div>
 
-        <small>
-            EPSOM
-        </small>
+            <div class="intro-content">
 
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     FEATURE STRIP
-========================= -->
-
-<section class="feature-strip">
-
-    <div class="feature-item">
-
-        <span class="feature-icon">
-            ✦
-        </span>
-
-        <div>
-            <strong>
-                Telephone Orders
-            </strong>
-
-            <span>
-                Call us directly
-            </span>
-        </div>
-
-    </div>
-
-
-    <div class="feature-item">
-
-        <span class="feature-icon">
-            中
-        </span>
-
-        <div>
-            <strong>
-                Chinese Favourites
-            </strong>
-
-            <span>
-                A wide-ranging menu
-            </span>
-        </div>
-
-    </div>
-
-
-    <div class="feature-item">
-
-        <span class="feature-icon">
-            ↗
-        </span>
-
-        <div>
-            <strong>
-                Home Delivery
-            </strong>
-
-            <span>
-                Delivery available
-            </span>
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     ABOUT
-========================= -->
-
-<section
-    class="about section-light"
-    id="about"
->
-
-    <div class="section-container">
-
-        <div class="section-heading">
-
-            <span class="eyebrow">
-                MEI HOUSE
-            </span>
-
-            <h2>
-                Chinese food,
-                <em>made to order.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="about-copy">
-
-            <p class="large-copy">
-                From familiar favourites to generous
-                dishes made for sharing.
-            </p>
-
-            <p>
-                Mei House offers a broad Chinese takeaway
-                menu in the heart of Epsom, with dishes
-                ranging from soups and appetisers to
-                seafood, duck, noodles, rice and set meals.
-            </p>
-
-            <a
-                href="menu.html"
-                class="text-link"
-            >
-                Explore the full menu
-                <span>→</span>
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     FEATURED DISHES
-========================= -->
-
-<section class="featured">
-
-    <div class="section-container">
-
-        <div class="section-top">
-
-            <div>
-
-                <span class="eyebrow">
-                    FROM THE MENU
-                </span>
+                <p class="eyebrow">WELCOME TO HUNGER HATCH</p>
 
                 <h2>
-                    Customer
-                    <em>favourites.</em>
-                </h2>
-
-            </div>
-
-
-            <a
-                href="menu.html"
-                class="outline-link"
-            >
-                See Full Menu
-                <span>↗</span>
-            </a>
-
-        </div>
-
-
-
-        <div class="dish-grid">
-
-
-            <article class="dish-card">
-
-                <div class="dish-number">
-                    01
-                </div>
-
-                <div class="dish-content">
-
-                    <span>
-                        APPETISER
-                    </span>
-
-                    <h3>
-                        Salt & Pepper
-                        Chicken Wings
-                    </h3>
-
-                    <p>
-                        Crispy chicken wings with
-                        salt and pepper seasoning.
-                    </p>
-
-                    <strong>
-                        £7.30
-                    </strong>
-
-                </div>
-
-            </article>
-
-
-
-            <article class="dish-card featured-red">
-
-                <div class="dish-number">
-                    02
-                </div>
-
-                <div class="dish-content">
-
-                    <span>
-                        CHICKEN
-                    </span>
-
-                    <h3>
-                        Chicken with
-                        Cashew Nuts
-                    </h3>
-
-                    <p>
-                        Chicken cooked with cashew
-                        nuts and vegetables.
-                    </p>
-
-                    <strong>
-                        £7.70
-                    </strong>
-
-                </div>
-
-            </article>
-
-
-
-            <article class="dish-card">
-
-                <div class="dish-number">
-                    03
-                </div>
-
-                <div class="dish-content">
-
-                    <span>
-                        SEAFOOD
-                    </span>
-
-                    <h3>
-                        King Prawns
-                        with Mushrooms
-                    </h3>
-
-                    <p>
-                        King prawns with mushrooms
-                        in a savoury sauce.
-                    </p>
-
-                    <strong>
-                        £8.50
-                    </strong>
-
-                </div>
-
-            </article>
-
-
-
-            <article class="dish-card">
-
-                <div class="dish-number">
-                    04
-                </div>
-
-                <div class="dish-content">
-
-                    <span>
-                        RICE
-                    </span>
-
-                    <h3>
-                        House Special
-                        Fried Rice
-                    </h3>
-
-                    <p>
-                        King prawns, chicken, beef,
-                        pork and mixed vegetables.
-                    </p>
-
-                    <strong>
-                        £9.50
-                    </strong>
-
-                </div>
-
-            </article>
-
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     MENU CATEGORIES
-========================= -->
-
-<section class="categories section-light">
-
-    <div class="section-container">
-
-        <div class="section-heading centered">
-
-            <span class="eyebrow">
-                BROWSE THE MENU
-            </span>
-
-            <h2>
-                Something for
-                <em>everyone.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="category-grid">
-
-
-            <a href="menu.html#soups" class="category-card">
-
-                <span>01</span>
-
-                <strong>
-                    Soups
-                </strong>
-
-                <small>
-                    Traditional favourites
-                </small>
-
-                <b>→</b>
-
-            </a>
-
-
-            <a href="menu.html#appetisers" class="category-card">
-
-                <span>02</span>
-
-                <strong>
-                    Appetisers
-                </strong>
-
-                <small>
-                    Crispy & savoury
-                </small>
-
-                <b>→</b>
-
-            </a>
-
-
-            <a href="menu.html#chicken" class="category-card">
-
-                <span>03</span>
-
-                <strong>
-                    Chicken
-                </strong>
-
-                <small>
-                    Classic Chinese dishes
-                </small>
-
-                <b>→</b>
-
-            </a>
-
-
-            <a href="menu.html#beef" class="category-card">
-
-                <span>04</span>
-
-                <strong>
-                    Beef
-                </strong>
-
-                <small>
-                    Rich & full flavoured
-                </small>
-
-                <b>→</b>
-
-            </a>
-
-
-            <a href="menu.html#seafood" class="category-card">
-
-                <span>05</span>
-
-                <strong>
-                    Seafood
-                </strong>
-
-                <small>
-                    Prawns, squid & more
-                </small>
-
-                <b>→</b>
-
-            </a>
-
-
-            <a href="menu.html#duck" class="category-card">
-
-                <span>06</span>
-
-                <strong>
-                    Duck
-                </strong>
-
-                <small>
-                    Peking & crispy duck
-                </small>
-
-                <b>→</b>
-
-            </a>
-
-
-            <a href="menu.html#noodles" class="category-card">
-
-                <span>07</span>
-
-                <strong>
-                    Noodles
-                </strong>
-
-                <small>
-                    Chow Mein & Udon
-                </small>
-
-                <b>→</b>
-
-            </a>
-
-
-            <a href="menu.html#rice" class="category-card">
-
-                <span>08</span>
-
-                <strong>
-                    Rice
-                </strong>
-
-                <small>
-                    Fried rice dishes
-                </small>
-
-                <b>→</b>
-
-            </a>
-
-
-        </div>
-
-
-        <div class="center-button">
-
-            <a
-                href="menu.html"
-                class="button button-red"
-            >
-                View Complete Menu
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     SET MEALS
-========================= -->
-
-<section class="sets">
-
-    <div class="set-decoration">
-        美
-    </div>
-
-    <div class="section-container">
-
-        <div class="set-grid">
-
-            <div class="set-intro">
-
-                <span class="eyebrow">
-                    FOR SHARING
-                </span>
-
-                <h2>
-                    Special
-                    <em>Set Meals.</em>
+                    FOOD MADE<br>
+                    <span>FOR HUNGER.</span>
                 </h2>
 
                 <p>
-                    Designed for two, three or four
-                    people, with a selection of Mei House
-                    favourites in each set.
+                    Located in the heart of Epsom, Hunger Hatch is all about
+                    good food, great drinks and keeping things simple.
+                    Whether you're grabbing breakfast, stopping for lunch
+                    or just looking for something good to eat, we've got
+                    you covered.
                 </p>
 
-                <a
-                    href="menu.html#sets"
-                    class="text-link light-link"
-                >
-                    See all set meals
-                    <span>→</span>
+                <a href="#gallery" class="text-link">
+                    TAKE A LOOK <span>→</span>
                 </a>
 
             </div>
 
+        </section>
 
-            <div class="set-list">
 
+        <!-- FEATURED FOOD -->
+        <section class="food-section" id="food">
 
-                <div class="set-item">
+            <div class="section-heading">
 
-                    <div class="set-label">
-                        A
-                    </div>
-
-                    <div>
-
-                        <h3>
-                            For Two Persons
-                        </h3>
-
-                        <p>
-                            Chicken with Green Pepper in
-                            Black Bean Sauce · Beef with
-                            Cashew Nuts · Sweet & Sour Pork
-                            · Special Fried Rice
-                        </p>
-
-                    </div>
-
-                    <strong>
-                        £27.50
-                    </strong>
-
+                <div>
+                    <p class="eyebrow">WHAT'S ON</p>
+                    <h2>THE GOOD<br><span>STUFF.</span></h2>
                 </div>
 
-
-
-                <div class="set-item">
-
-                    <div class="set-label">
-                        B
-                    </div>
-
-                    <div>
-
-                        <h3>
-                            For Two Persons
-                        </h3>
-
-                        <p>
-                            Honey Spare Ribs · Chicken with
-                            Cashew Nuts · Beef with Green
-                            Pepper in Black Bean Sauce ·
-                            Sweet & Sour Pork · Special Fried Rice
-                        </p>
-
-                    </div>
-
-                    <strong>
-                        £33.50
-                    </strong>
-
-                </div>
-
-
-
-                <div class="set-item">
-
-                    <div class="set-label">
-                        C
-                    </div>
-
-                    <div>
-
-                        <h3>
-                            For Three Persons
-                        </h3>
-
-                        <p>
-                            Crispy Prawn Dumplings · BBQ Spare
-                            Ribs · Chicken with Green Pepper in
-                            Black Bean Sauce · Crispy Shredded
-                            Chilli Beef · Roast Duck · King Prawns
-                            with Mushrooms · Special Fried Rice
-                        </p>
-
-                    </div>
-
-                    <strong>
-                        £52.50
-                    </strong>
-
-                </div>
-
-
+                <div class="section-number">02</div>
 
             </div>
 
-        </div>
 
-    </div>
+            <div class="food-grid">
 
-</section>
+                <article class="food-card food-large">
+                    <img src="images/food1.jpg" alt="Food at Hunger Hatch">
+                    <div class="food-label">
+                        <span>01</span>
+                        <h3>MADE FRESH</h3>
+                    </div>
+                </article>
 
+                <article class="food-card">
+                    <img src="images/food2.jpg" alt="Food and drinks at Hunger Hatch">
+                    <div class="food-label">
+                        <span>02</span>
+                        <h3>GOOD COFFEE</h3>
+                    </div>
+                </article>
 
+                <article class="food-card">
+                    <img src="images/food3.jpg" alt="Fresh food from Hunger Hatch">
+                    <div class="food-label">
+                        <span>03</span>
+                        <h3>BIG FLAVOUR</h3>
+                    </div>
+                </article>
 
-<!-- =========================
-     ORDER CTA
-========================= -->
+            </div>
 
-<section class="order-section">
-
-    <div class="order-inner">
-
-        <span class="eyebrow">
-            TELEPHONE ORDERS WELCOME
-        </span>
-
-        <h2>
-            Hungry?
-            <em>Give us a call.</em>
-        </h2>
-
-        <p>
-            Browse the menu, choose your favourites,
-            then call Mei House directly.
-        </p>
-
-        <a
-            href="tel:01372727673"
-            class="phone-number"
-        >
-            01372 727 673
-        </a>
-
-        <a
-            href="menu.html"
-            class="button button-white"
-        >
-            View Menu
-        </a>
-
-    </div>
-
-</section>
+        </section>
 
 
+        <!-- STATEMENT -->
+        <section class="statement">
 
-<!-- =========================
-     VISIT
-========================= -->
+            <div class="statement-inner">
 
-<section
-    class="visit section-light"
-    id="visit"
->
-
-    <div class="section-container">
-
-        <div class="visit-grid">
-
-
-            <div>
-
-                <span class="eyebrow">
-                    FIND US
-                </span>
+                <p class="eyebrow">HUNGER HATCH • EPSOM</p>
 
                 <h2>
-                    Right in the
-                    <em>heart of Epsom.</em>
+                    SERIOUSLY<br>
+                    <span>GOOD FOOD.</span>
+                </h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+        <section class="gallery-section" id="gallery">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">A LITTLE LOOK</p>
+                    <h2>INSIDE<br><span>THE HATCH.</span></h2>
+                </div>
+
+                <div class="section-number">03</div>
+
+            </div>
+
+            <div class="gallery">
+
+                <div class="gallery-item gallery-tall">
+                    <img src="images/food4.jpg" alt="Hunger Hatch food">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/interior.jpg" alt="Inside Hunger Hatch">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/food2.jpg" alt="Food at Hunger Hatch">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VISIT -->
+        <section class="visit-section" id="visit">
+
+            <div class="visit-left">
+
+                <p class="eyebrow">COME SAY HI</p>
+
+                <h2>
+                    FIND<br>
+                    <span>THE HATCH.</span>
                 </h2>
 
                 <p class="address">
-                    33 Upper High Street<br>
+                    6 Upper High Street<br>
                     Epsom<br>
-                    Surrey<br>
-                    KT17 4QY
+                    KT17 4QJ
                 </p>
 
                 <a
-                    href="https://www.google.com/maps/search/?api=1&query=33+Upper+High+Street+Epsom+KT17+4QY"
+                    class="button button-primary"
+                    href="https://www.google.com/maps/search/?api=1&query=Hunger+Hatch+Epsom"
                     target="_blank"
-                    rel="noopener"
-                    class="text-link"
+                    rel="noopener noreferrer"
                 >
-                    Open in Google Maps
-                    <span>↗</span>
+                    OPEN IN GOOGLE MAPS
                 </a>
 
             </div>
 
 
+            <div class="visit-right">
 
-            <div class="hours">
+                <div class="hours">
 
-                <span class="eyebrow">
-                    OPENING HOURS
-                </span>
+                    <p class="eyebrow">OPENING HOURS</p>
 
+                    <div class="hours-row">
+                        <span>MON — FRI</span>
+                        <strong>8:00 — 15:00</strong>
+                    </div>
 
-                <div class="hours-row">
-                    <span>Monday</span>
-                    <strong>CLOSED</strong>
+                    <div class="hours-row">
+                        <span>SATURDAY</span>
+                        <strong>8:00 — 14:00</strong>
+                    </div>
+
+                    <div class="hours-row">
+                        <span>SUNDAY</span>
+                        <strong>CLOSED</strong>
+                    </div>
+
                 </div>
 
-                <div class="hours-row">
-                    <span>Tuesday</span>
-                    <strong>5:00pm — 10:00pm</strong>
-                </div>
 
-                <div class="hours-row">
-                    <span>Wednesday</span>
-                    <strong>5:00pm — 10:00pm</strong>
-                </div>
+                <div class="socials">
 
-                <div class="hours-row">
-                    <span>Thursday</span>
-                    <strong>5:00pm — 10:00pm</strong>
-                </div>
+                    <p class="eyebrow">FOLLOW ALONG</p>
 
-                <div class="hours-row">
-                    <span>Friday</span>
-                    <strong>5:00pm — 11:00pm</strong>
-                </div>
+                    <div class="social-links">
 
-                <div class="hours-row">
-                    <span>Saturday</span>
-                    <strong>5:00pm — 11:00pm</strong>
-                </div>
+                        <a
+                            href="https://www.instagram.com/the_hunger_hatch/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            INSTAGRAM ↗
+                        </a>
 
-                <div class="hours-row">
-                    <span>Sunday</span>
-                    <strong>5:00pm — 10:00pm</strong>
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            FACEBOOK ↗
+                        </a>
+
+                    </div>
+
                 </div>
 
             </div>
 
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            HUNGER<span>HATCH</span>
         </div>
 
-    </div>
+        <p>
+            GOOD FOOD. GOOD PEOPLE. EPSOM.
+        </p>
 
-</section>
-
-</main>
-
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    <div class="footer-container">
-
-        <div class="footer-brand">
-
-            <span>
-                MEI HOUSE
-            </span>
-
-            <small>
-                美 · CHINESE TAKEAWAY
-            </small>
-
-        </div>
-
-
-        <div class="footer-links">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="menu.html">
-                Menu
-            </a>
-
-            <a href="#about">
-                About
-            </a>
-
-            <a href="#visit">
-                Find Us
-            </a>
-
-        </div>
-
-
-        <a
-            href="tel:01372727673"
-            class="footer-phone"
-        >
-            01372 727 673
+        <a href="#home" class="back-top">
+            BACK TO TOP ↑
         </a>
 
-    </div>
+    </footer>
 
 
-    <div class="footer-bottom">
-
-        <span>
-            Quality Chinese Food To Take Away
-        </span>
-
-        <span>
-            © <span id="year"></span> Mei House
-        </span>
-
-    </div>
-
-</footer>
-
-
-
-<a
-    href="tel:01372727673"
-    class="mobile-call"
->
-    ☎ &nbsp; CALL TO ORDER
-</a>
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
